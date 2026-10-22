@@ -1,0 +1,44 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "type": "ford",
+                "metadata": {
+                    "nztopo50:ford:start_m": 0,
+                    "nztopo50:ford:end_m": 50
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    174.78549695,
+                    -36.85407698
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "type": "river",
+                "metadata": {
+                    "nztopo50:geometry": ""
+                }
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        174.78549695,
+                        -36.85407698
+                    ],
+                    [
+                        174.78549695,
+                        -36.85407698
+                    ]
+                ]
+            }
+        }
+    ]
+}

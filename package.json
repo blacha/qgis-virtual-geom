@@ -1,0 +1,19 @@
+{
+  "name": "topo50-geom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsp format --check \"schema/src/**/*.tsp\"",
+    "format": "tsp format \"schema/src/**/*.tsp\"",
+    "bundle": "tsp compile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@typespec/compiler": "^1.17.0",
+    "@typespec/json-schema": "^1.17.0"
+  }
+}

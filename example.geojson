@@ -23,7 +23,7 @@
             "properties": {
                 "type": "river",
                 "metadata": {
-                    "nztopo50:geometry": ""
+                    "nztopo50:geometry": "LINESTRING (174.78661826 -36.85407698, 174.78661826 -36.85407698)"
                 }
             },
             "geometry": {

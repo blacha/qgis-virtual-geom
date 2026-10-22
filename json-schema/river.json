@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "river",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "const": "river"
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "nztopo50:visible": {
+                    "type": "boolean",
+                    "description": "Hide the feature from rendering on the nztopo50 product"
+                },
+                "nztopo50:geometry": {
+                    "type": "string",
+                    "description": "Override the geometry of the object when rendering the nztopo50 product (WKT string or hex-encoded WKB)"
+                }
+            }
+        }
+    },
+    "required": [
+        "type",
+        "metadata"
+    ],
+    "additionalProperties": false
+}

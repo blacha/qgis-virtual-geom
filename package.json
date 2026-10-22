@@ -6,7 +6,7 @@
   "scripts": {
     "check": "tsp format --check \"schema/src/**/*.tsp\"",
     "format": "tsp format \"schema/src/**/*.tsp\"",
-    "bundle": "tsp compile"
+    "bundle": "tsp compile schema/src"
   },
   "keywords": [],
   "author": "",

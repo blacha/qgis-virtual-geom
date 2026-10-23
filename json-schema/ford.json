@@ -12,7 +12,7 @@
             "properties": {
                 "nztopo50:ford:start_m": {
                     "type": "number",
-                    "description": "Number of meteres to extend the blue road mask at the start of the road line"
+                    "description": "Number of meters to extend the blue road mask at the start of the road line"
                 },
                 "nztopo50:ford:end_m": {
                     "type": "number",
@@ -23,6 +23,14 @@
                     "description": "Hide the feature from rendering on the nztopo50 product"
                 },
                 "nztopo50:geometry": {
+                    "type": "string",
+                    "description": "Override the geometry of the object when rendering the nztopo50 product (WKT string or hex-encoded WKB)"
+                },
+                "nztopo250:visible": {
+                    "type": "boolean",
+                    "description": "Hide the feature from rendering on the nztopo50 product"
+                },
+                "nztopo250:geometry": {
                     "type": "string",
                     "description": "Override the geometry of the object when rendering the nztopo50 product (WKT string or hex-encoded WKB)"
                 }

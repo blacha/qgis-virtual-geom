@@ -17,6 +17,14 @@
                 "nztopo50:geometry": {
                     "type": "string",
                     "description": "Override the geometry of the object when rendering the nztopo50 product (WKT string or hex-encoded WKB)"
+                },
+                "nztopo250:visible": {
+                    "type": "boolean",
+                    "description": "Hide the feature from rendering on the nztopo50 product"
+                },
+                "nztopo250:geometry": {
+                    "type": "string",
+                    "description": "Override the geometry of the object when rendering the nztopo50 product (WKT string or hex-encoded WKB)"
                 }
             }
         }

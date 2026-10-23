@@ -10,6 +10,7 @@ model river {
   metadata: {
     ...river_metadata;
     ...nztopo50_metadata;
+    ...nztopo250_metadata;
   };
 }
 

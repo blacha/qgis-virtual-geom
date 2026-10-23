@@ -1,0 +1,34 @@
+<OGRVRTDataSource>
+  <OGRVRTLayer name="river">
+    <SrcDataSource relativeToVRT="1">example.geojson</SrcDataSource>
+    <SrcSQL dialect="SQLite">
+      SELECT 
+        type,
+        metadata,
+        COALESCE(
+          GeomFromText(json_extract(metadata, '$."nztopo50:geometry"'), 4326),
+          geometry
+        ) AS geometry
+      FROM example
+      WHERE type = 'river'
+        AND coalesce(json_extract(metadata, '$."nztopo50:visible"'), 1) != 0
+    </SrcSQL>
+    <GeometryType>wkbLineString</GeometryType>
+  </OGRVRTLayer>
+  <OGRVRTLayer name="ford">
+    <SrcDataSource relativeToVRT="1">example.geojson</SrcDataSource>
+    <SrcSQL dialect="SQLite">
+      SELECT 
+        type,
+        metadata,
+        COALESCE(
+          GeomFromText(json_extract(metadata, '$."nztopo50:geometry"'), 4326),
+          geometry
+        ) AS geometry
+      FROM example
+      WHERE type = 'ford'
+        AND coalesce(json_extract(metadata, '$."nztopo50:visible"'), 1) != 0
+    </SrcSQL>
+    <GeometryType>wkbPoint</GeometryType>
+  </OGRVRTLayer>
+</OGRVRTDataSource>
